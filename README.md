@@ -60,7 +60,7 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 		- [optuna](https://optuna.org/)
 		- Numpy, pandas, matplotlib
 	
-# Notes 
+# Notes
 
 - Each file (notebook# 1-9) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
 - Lightgbm model runs in this order:
