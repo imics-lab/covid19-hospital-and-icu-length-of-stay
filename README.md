@@ -61,7 +61,7 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 		- Numpy, pandas, matplotlib
 	
 # Notes 
-- Each file (notebook# 1-9) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
+- Each file (first 9 as mentioned in avove notebook description) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
 - Lightgbm model runs in this order:
 		- Without using parameter optimization
 		- RandomizedSearchCV with optimized parameters.
@@ -73,3 +73,5 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 		- Piecewise Linear Encoding with Parameter optimization
 		- Piecewise Linear Encoding with Tuned parameters (tuned parameters passed from previous execution of PLE)
 
+
+# 
