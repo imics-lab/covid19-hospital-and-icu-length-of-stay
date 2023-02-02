@@ -54,24 +54,24 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 
 - Programming Language: Python (3.8.* or later)
 - Required python libs to install:
-		- scikit-learn, 
-		- tensorflow, 
-		- [tabtransformertf](https://github.com/aruberts/TabTransformerTF), 
-		- [optuna](https://optuna.org/), 
-		- Numpy, pandas, matplotlib
+		scikit-learn
+		tensorflow
+		[tabtransformertf](https://github.com/aruberts/TabTransformerTF)
+		[optuna](https://optuna.org/)
+		Numpy, pandas, matplotlib
 	
 # Notes 
 - Each file (first 9 as mentioned in avove notebook description) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
 - Lightgbm model runs in this order: 
-		- Without using parameter optimization then 
-		- RandomizedSearchCV with optimized parameters.
+		Without using parameter optimization then 
+		RandomizedSearchCV with optimized parameters.
 - FT Transformer model runs in this order: 
-		- 1. Piecewise Linear Encoding without Parameter optimization 
-		- 2. Piecewise Periodic Encoding without optimized parameters
-		- 3. Piecewise Periodic Encoding with Parameter optimization 
-		- 4. Piecewise Periodic Encoding with Tuned parameters (tuned parameters passed from previous execution of PPE)
-		- 5. Piecewise Linear Encoding with Parameter optimization
-		- 6. Piecewise Linear Encoding with Tuned parameters (tuned parameters passed from previous execution of PLE)
+		1. Piecewise Linear Encoding without Parameter optimization. 
+		2. Piecewise Periodic Encoding without optimized parameters.
+		3. Piecewise Periodic Encoding with Parameter optimization.
+		4. Piecewise Periodic Encoding with Tuned parameters (tuned parameters passed from previous execution of PPE).
+		5. Piecewise Linear Encoding with Parameter optimization.
+		6. Piecewise Linear Encoding with Tuned parameters (tuned parameters passed from previous execution of PLE).
 
 
 # 
