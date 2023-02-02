@@ -20,7 +20,7 @@ The accurate prediction of a patient’s length of stay is a crucial aspect for 
 - hospital_merged_num_cat_top40lbmfi.ipynb
 	- Top 40 out of 166 (numerical and categorical) features were used based on lightgbm feature importance in this hospital LOS notebook.
 - icu_merged_num_cat_top20lbmfi.ipynb
-	- This notebook is for icu length of stay model prediction. during data pre-processing and preparation; 148 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 148 files includes 106 numerical features and 42 categorical features. Out of 148 features, total 20 features were selected based on lightgbm feature importance for model building. 
+	- This notebook is for icu length of stay model prediction. during data pre-processing and preparation; 148 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 148 features includes 106 numerical features and 42 categorical features. Out of 148 features, total 20 features were selected based on lightgbm feature importance for model building. 
 - icu_merged_num_cat_top30lbmfi_v1.ipynb (**referred in ieee paper**)
 	- Top 30 out of 148 (numerical and categorical) features were used based on lightgbm feature importance in this icu LOS notebook.
 - icu_merged_num_cat_top30lbmfi_v2.ipynb
@@ -53,7 +53,7 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 # Pre-requisites
 
 - Programming Language: Python (3.8.* or later)
-- Required python libs to install: 
+- Required python libs to install:
 		- scikit-learn
 		- tensorflow
 		- [tabtransformertf](https://github.com/aruberts/TabTransformerTF)
@@ -61,16 +61,15 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 		- Numpy, pandas, matplotlib
 	
 # Notes 
-
 - Each file (notebook# 1-9) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
 - Lightgbm model runs in this order:
-	-  Without using parameter optimization
-	-  RandomizedSearchCV with optimized parameters.
+		- Without using parameter optimization
+		- RandomizedSearchCV with optimized parameters.
 - FT Transformer model runs in this order:
-	- Piecewise Linear Encoding without Parameter optimization
-	- Piecewise Periodic Encoding without optimized parameters
-	- Piecewise Periodic Encoding with Parameter optimization
-	- Piecewise Periodic Encoding with Tuned parameters (tuned parameters passed from 3)
-	- Piecewise Linear Encoding with Parameter optimization
-	- Piecewise Linear Encoding with Tuned parameters (tuned parameters passed from 5)
+		- Piecewise Linear Encoding without Parameter optimization 
+		- Piecewise Periodic Encoding without optimized parameters
+		- Piecewise Periodic Encoding with Parameter optimization 
+		- Piecewise Periodic Encoding with Tuned parameters (tuned parameters passed from previous execution of PPE)
+		- Piecewise Linear Encoding with Parameter optimization
+		- Piecewise Linear Encoding with Tuned parameters (tuned parameters passed from previous execution of PLE)
 
