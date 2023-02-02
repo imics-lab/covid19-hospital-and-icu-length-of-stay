@@ -13,7 +13,7 @@ The accurate prediction of a patient’s length of stay is a crucial aspect for 
 
 - hospital_merged_num_cat_top20lbmfi.ipynb
 	- This notebook is for hospital length of stay model prediction. during data pre-processing and preparation; 166 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 166 features includes 123 numerical features and 23 categorical features. Out of 166 features, top 20 features were selected based on lightgbm feature importance for model building. 
-- hospital_merged_num_cat_top30lbmfi_v1.ipynb (**referred in ieee paper**)
+- hospital_merged_num_cat_top30lbmfi_v1.ipynb (**final results referred in ieee paper**)
 	- Top 30 out of 166 (numerical and categorical) features were used based on lightgbm feature importance in this hospital LOS notebook.
 - hospital_merged_num_cat_top30lbmfi_v2.ipynb
 	- Top 30 out of 166 (numerical and categorical) features were used based on lightgbm feature importance in this hospital LOS notebook and compared to above notebook, some additional graphs have been included such as validation/training loss.
@@ -21,7 +21,7 @@ The accurate prediction of a patient’s length of stay is a crucial aspect for 
 	- Top 40 out of 166 (numerical and categorical) features were used based on lightgbm feature importance in this hospital LOS notebook.
 - icu_merged_num_cat_top20lbmfi.ipynb
 	- This notebook is for icu length of stay model prediction. during data pre-processing and preparation; 148 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 148 features includes 106 numerical features and 42 categorical features. Out of 148 features, total 20 features were selected based on lightgbm feature importance for model building. 
-- icu_merged_num_cat_top30lbmfi_v1.ipynb (**referred in ieee paper**)
+- icu_merged_num_cat_top30lbmfi_v1.ipynb (**final results referred in ieee paper**)
 	- Top 30 out of 148 (numerical and categorical) features were used based on lightgbm feature importance in this icu LOS notebook.
 - icu_merged_num_cat_top30lbmfi_v2.ipynb
 	- Top 30 out of 148 (numerical and categorical) features were used based on lightgbm feature importance in this icu LOS notebook and compared to above icu top 30 notebook, some additional graphs have been included such as validation/training loss. 
@@ -47,7 +47,7 @@ The accurate prediction of a patient’s length of stay is a crucial aspect for 
 
 Dataset in this project has been used from Synthetic Mass Library which can be downloaded from [here](https://synthea.mitre.org/downloads). this dataset contains total 16 files including patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations, organizations, payer transitions, payers, procedures, providers, and supplies. there are two types of datasets available: 
 
-- Covid-19 100k: consists 124,150 patients information; used in this project as training set (during data preperation and later split of 80/20 during model training)
+- Covid-19 100k: consists 124,150 patients information; used in this project as training set (during data preparation and later split of 80/20 during model training)
 - Covid-19 10k: consists 12,352 patients information; used as test set
 
 # Pre-requisites
@@ -61,7 +61,7 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 		Numpy, pandas, matplotlib
 	
 # Notes 
-- Each file (first 9 as mentioned in avove notebook description) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
+- Each file (first 9 as mentioned in above notebook description) runs lightgbm and 2 transformer (FT Piecewise Linear and Periodic Encoding) models all together.
 - Lightgbm model runs in this order: 
 		Without using parameter optimization then 
 		RandomizedSearchCV with optimized parameters.
