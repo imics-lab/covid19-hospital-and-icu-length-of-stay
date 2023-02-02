@@ -52,7 +52,7 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 
 # Pre-requisites
 
-- Programming Language used: Python (3.8.* or later)
+- Programming Language: Python (3.8.* or later)
 - Required python libs to install: 
 		- scikit-learn
 		- tensorflow
