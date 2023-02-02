@@ -54,10 +54,10 @@ Dataset in this project has been used from Synthetic Mass Library which can be d
 
 - Programming Language: Python (3.8.* or later)
 - Required python libs to install:
-		scikit-learn
-		tensorflow
-		[tabtransformertf](https://github.com/aruberts/TabTransformerTF)
-		[optuna](https://optuna.org/)
+		scikit-learn,
+		tensorflow,
+		[tabtransformertf](https://github.com/aruberts/TabTransformerTF),
+		[optuna](https://optuna.org/),
 		Numpy, pandas, matplotlib
 	
 # Notes 
