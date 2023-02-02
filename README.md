@@ -12,7 +12,7 @@ The accurate prediction of a patient’s length of stay is a crucial aspect for 
 # Notebook Description
 
 - hospital_merged_num_cat_top20lbmfi.ipynb
-	- This notebook is for hospital length of stay model prediction. during data pre-processing and preparation; 166 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 166 files includes 123 numerical features and 23 categorical features. Out of 166 features, top 20 features were selected based on lightgbm feature importance for model building. 
+	- This notebook is for hospital length of stay model prediction. during data pre-processing and preparation; 166 features were selected from 11 files (patients, careplans, conditions, encounters, medications, observations, allergies, devices, imaging studies, immunizations and providers). 166 features includes 123 numerical features and 23 categorical features. Out of 166 features, top 20 features were selected based on lightgbm feature importance for model building. 
 - hospital_merged_num_cat_top30lbmfi_v1.ipynb (**referred in ieee paper**)
 	- Top 30 out of 166 (numerical and categorical) features were used based on lightgbm feature importance in this hospital LOS notebook.
 - hospital_merged_num_cat_top30lbmfi_v2.ipynb
